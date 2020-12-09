@@ -1,0 +1,103 @@
+body{
+    background: #edf5e7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**Access page container**/
+.cont {
+    width: 650px;
+    height: 800px;
+    position: absolute;
+	top:160px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: url('/img/login.jpg');
+    background-size: cover;
+
+}
+.content{
+    width: 650px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+
+.head {
+    text-align: left;
+    color: #430257;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.header{
+    width: 650px;
+    height: 60px;
+    background-color: #430257;
+}
+.header h3{
+   line-height: 40px;
+   font-weight: bolder;
+   font-size: 30px;
+   color: #fff;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+
+label{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+fieldset legend{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+fieldset label{
+    color: #430257;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+select{
+    font-size: 10px;
+}
+
+.btn1{
+    float: right;
+    background-color: #430257;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0px 20px 0px 20px;
+}
+
+.btn2{
+    float: right;
+    background-color: #fff;
+    border: 2px solid #430257;
+    color: #430257;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.notify{
+    width: auto;
+    height: 35px;
+    font-size: 14px;
+}
+
+.error{
+    color: red;
+}

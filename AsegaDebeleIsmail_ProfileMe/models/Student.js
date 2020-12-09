@@ -12,7 +12,8 @@ const studentSchema = new mongoose.Schema({
     email:String,
     skills:String,
     projects:String,
+    ProfilePic:String,
 
 });
 
-module.exports = mongoose.model('StudentData', studentSchema)
+module.exports = mongoose.model('student', studentSchema)
