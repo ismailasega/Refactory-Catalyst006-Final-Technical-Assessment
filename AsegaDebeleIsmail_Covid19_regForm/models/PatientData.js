@@ -11,7 +11,6 @@ const patientSchema = new mongoose.Schema({
     nationality:String,
     gender:String,
     category:String
-
 });
 
 module.exports = mongoose.model('PatientData', patientSchema)
