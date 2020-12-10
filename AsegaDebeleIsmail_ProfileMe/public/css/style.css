@@ -25,6 +25,12 @@ body{
     padding: 0px 15px 0px 15px;
 }
 
+.content strong{
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+}
+
 .head {
     text-align: left;
     color: #430257;
@@ -79,7 +85,7 @@ select{
     color: #fff;
     font-weight: bold;
     margin-right: 30px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 25px 0px 25px;
 }
 
 .btn2{
@@ -89,7 +95,7 @@ select{
     color: #430257;
     font-weight: bold;
     margin-right: 10px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 25px 0px 25px;
 }
 
 .notify{
@@ -99,5 +105,9 @@ select{
 }
 
 .error{
+    color: red;
+}
+
+span{
     color: red;
 }

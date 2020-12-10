@@ -7,7 +7,9 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
     .header 
       h3 Student Details Entry Form
     .head
-      p Not all fields marked a red star are (*) are required
+      p Not all fields marked a red star are (
+       span *
+       |) are required
     if status
       .alert.alert-success.notify
         strong Success!
@@ -20,16 +22,19 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
       form(name="AddStudent" action="/RegStudent" method="POST" enctype="multipart/form-data" onsubmit="return validate()")
         .form-row
           .form-group.col-md-6
-            label(for="inputSurname") Sur name
+            label(for="inputSurname") Sur name 
+             span *
             input.form-control(type="text" name="surname" placeholder="Enter your sur Name here")
             #name.error
           .form-group.col-md-6
-            label(for="inputgivenName") Given name
+            label(for="inputgivenName") Given name 
+             span *
             input.form-control(type="text" name="givenName" placeholder="Enter yor Given Name here")
             #gName.error
         .form-group
           fieldset
-            legend Gender
+            legend Gender 
+              span *
               .form-group.col-md-6
                 .form-check.custom-control-inline
                   input.form-check-input(type="radio" name="gender" value='Male' checked) 
@@ -40,11 +45,13 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
             #gen.error
         .form-row
           .form-group.col-md-6
-            label(for="inputdob") Data of Birth
+            label(for="inputdob") Data of Birth 
+             span *
             input.form-control(type="date" name="dob")
             #DOB.error
           .form-group.col-md-6
-            label(for="inputcountry") Country
+            label(for="inputcountry") Country 
+             span *
             select.form-control(name="country", type="text")
               option(value="Default" selected) -------Select Country-------
               option Uganda
@@ -56,30 +63,38 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
             #Country.error
         .form-row
           .form-group.col-md-6
-            label(for="inputoresidence") Place of Residence
+            label(for="inputoresidence") Place of Residence 
+             span *
             input.form-control(type="text" name="residence" placeholder="Enter your Current place of residence")
             #reside.error
           .form-group.col-md-6
-            label(for="inputPhone") Phone Number
+            label(for="inputPhone") Phone Number 
+             span *
             input.form-control(type="text" name="phone" placeholder="Eg. 07xxxxxxxx or +2567xxxxxxxx" )
             #Phone.error
         .form-row
           .form-group.col-md-12
-            label(for="inputemail") Email Address
+            label(for="inputemail") Email Address 
+             span *
             input.form-control(type="text" name="email" placeholder="E.g. applicant@gmail.com")
             #Email.error
         .form-row
           .form-group.col-md-6
-            label(for="inputSkills") Skills (Seperate skills with commas)
+            label(for="inputSkills") Skills 
+             strong (Seperate Projects with commas) 
+             span *
             textarea.form-control(type="text" name="skills" row="3")
             #Skills.error
           .form-group.col-md-6
-            label(for="inputprojects") Projects (Seperate Projects with commas)
+            label(for="inputprojects") Projects 
+             strong (Seperate Projects with commas) 
+             span *
             textarea.form-control(type="text" name="projects" row="3")
             #Project.error
         .form-row
           .form-group
-            label(for="UploadProfPic") Upload Profile Pic (PNG, Jpg, Jpeg)
+            label(for="UploadProfPic") Upload Profile Pic (PNG, Jpg, Jpeg) 
+             span *
             input.form-control-file(type="file", name="ProfilePic")
             #imge.error
         button.btn2(type="reset") Cancel
