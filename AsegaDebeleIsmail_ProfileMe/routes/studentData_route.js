@@ -53,4 +53,9 @@ router.get('/Students', async(req, res)=>{
     }
 });
 
+//Render Selction Page 
+router.get('/viewProfile', (req, res)=>{
+    res.render('StudentProfile_page');
+});
+
 module.exports = router;
