@@ -22,8 +22,14 @@ storage: storage,
 
 //Render registarion form  
 router.get('/StudentData', (req, res)=>{
-    res.render('RegStudent_page', {status:'', status2:''});
+    res.render('RegStudent_page', {status2:''});
 });
+
+//Render Selction Page 
+router.get('/selectOption', (req, res)=>{
+    res.render('Selection_page', {status:''});
+});
+
 
 //Posting student details to DB
 router.post('/RegStudent', upload, async(req, res)=>{
@@ -31,17 +37,17 @@ router.post('/RegStudent', upload, async(req, res)=>{
         const StudentDetails = new student(req.body);
         StudentDetails.ProfilePic=req.file.filename;
         await StudentDetails.save();
-        res.render('RegStudent_page', {status:'Data has been successfully submitted'});
+        res.render('Selection_page', {status:'Data has been successfully submitted'});
     }catch(err){
         res.render('RegStudent_page', {status2:'Problem encountered while submitting this form'});
     }
 })
 
 //Retriving details from ufarmDB
-router.get('/StudentProfile', async(req, res)=>{
+router.get('/Students', async(req, res)=>{
     try{
-      const items = await student.findOne({_id: req.params.id})
-      res.render('StudentProf_page',{students: items})
+      const studentDetails = await student.find();
+      res.render('students_page',{students: studentDetails});
     }catch(err){
         res.render('RegStudent_page', {status2:'Failed to retrive student details'});
     }

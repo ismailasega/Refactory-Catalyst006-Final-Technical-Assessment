@@ -10,11 +10,7 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
       p Not all fields marked a red star are (
        span *
        |) are required
-    if status
-      .alert.alert-success.notify
-        strong Success!
-        |  #{status}
-    else if status2
+    if status2
       .alert.alert-danger.notify
         strong Failed!
         |  #{status2}
@@ -37,7 +33,7 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
               span *
               .form-group.col-md-6
                 .form-check.custom-control-inline
-                  input.form-check-input(type="radio" name="gender" value='Male' checked) 
+                  input.form-check-input(type="radio" name="gender" value='Male') 
                   label.form-check-label Male
                 .form-check.custom-control-inline
                   input.form-check-input(type="radio" name="gender" value='Female') 

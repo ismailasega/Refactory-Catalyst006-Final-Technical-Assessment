@@ -14,10 +14,9 @@ body{
 	margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px #00000077;
-    background: url('/img/login.jpg');
-    background-size: cover;
 
 }
+
 .content{
     width: 650px;
     margin: auto;
@@ -110,4 +109,110 @@ select{
 
 span{
     color: red;
+}
+
+/**Selection_Page**/
+.content2{
+    width: 650px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+
+
+.cont2 {
+    width: 650px;
+    height: 250px;
+    position: absolute;
+	top:0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+
+}
+.btn3{
+    background-color: #430257;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 140px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+.btn3:hover{
+    background-color: #ab00df;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 140px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+/**Students_Page**/
+.content3{
+    width: 680px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+.header2{
+    width: 680px;
+    height: 60px;
+    background-color: #430257;
+}
+.header2 h3{
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+ }
+.cont3 {
+    width: 680px;
+    height: 700px;
+    position: absolute;
+	top:70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+
+}
+.btn4{
+    background-color: #430257;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+.btn4:hover{
+    background-color: #ab00df;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+.table-con{
+    padding-top: 15px;
+}
+
+.tcontainer{
+    padding-top: 70px;
+}
+
+.tb-body{
+    overflow-x:scroll;
+    display:block;
+    font-size: 14px;
 }
