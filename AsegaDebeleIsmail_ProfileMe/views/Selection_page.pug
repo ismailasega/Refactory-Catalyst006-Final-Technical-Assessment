@@ -6,15 +6,16 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
 .cont2
     .header 
       h3 Student Details
-    br
-    if status
-      .alert.alert-success.notify
-        strong Success!
-        |  #{status}
-    .content2
+      .container
         br
-        a.btn3(href='/StudentData') Back
-        a.btn3(href='/Students') view Profile
+        if status
+          .alert.alert-success.notify
+            strong Success!
+            |  #{status}
+        .content2
+            br
+            a.btn3(href='/StudentData') Back
+            a.btn3(href='/Students') view Profile
 
 script(src="bootstrap/jquery/jquery.min.js")
 script(src="bootstrap/js/bootstrap.bundle.min.js")

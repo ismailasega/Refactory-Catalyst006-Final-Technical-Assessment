@@ -4,7 +4,7 @@ body{
 }
 /**Access page container**/
 .cont {
-    width: 650px;
+    width: 690px;
     height: 800px;
     position: absolute;
 	top:160px;
@@ -38,7 +38,7 @@ body{
 }
 
 .header{
-    width: 650px;
+    width: 690px;
     height: 60px;
     background-color: #430257;
 }
@@ -82,10 +82,20 @@ select{
     float: right;
     background-color: #430257;
     border: 2px solid #430257;
+    border-radius: 5px;
     color: #fff;
     font-weight: bold;
     margin-right: 30px;
     padding: 0px 25px 0px 25px;
+}
+.btn1:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 25px 0px 25px;
+    text-decoration: none;
 }
 
 .btn2{
@@ -93,9 +103,19 @@ select{
     background-color: #fff;
     border: 2px solid #430257;
     color: #430257;
+    border-radius: 5px;
     font-weight: bold;
     margin-right: 10px;
     padding: 0px 25px 0px 25px;
+}
+.btn2:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 25px 0px 25px;
+    text-decoration: none;
 }
 
 .notify{
@@ -122,7 +142,7 @@ span{
 
 
 .cont2 {
-    width: 650px;
+    width: 690px;
     height: 250px;
     position: absolute;
 	top:0px;
@@ -162,7 +182,7 @@ span{
     padding: 0px 15px 0px 15px;
 }
 .header2{
-    width: 680px;
+    width: 690px;
     height: 60px;
     background-color: #430257;
 }
@@ -175,7 +195,7 @@ span{
     padding-left: 20px;
  }
 .cont3 {
-    width: 680px;
+    width: 690px;
     height: 700px;
     position: absolute;
 	top:70px;
@@ -229,24 +249,27 @@ span{
     float: right;
     font-size: 10px;
     padding-top: 180px;
-    padding-left: 50px;
+    margin-left: 270px;
     color: #430257;
+    position: absolute;
 }
 .pI{
     float: right;
+    text-align: right;
     font-size: 18px;
     color:rgb(77, 76, 76);
 }
 
 .pPic{
     float: right;
-    padding-left: 180px;
+    margin-left: 220px;
+    position: absolute;
    
 }
 
 .left{
     float: left;
-    padding-left: 25px;
+    padding-left: 40px;
     line-height: 40px;
     font-size: 18px;
     color:rgb(77, 76, 76);
@@ -254,7 +277,7 @@ span{
 
 .right{
     float:right;
-    padding-left: 180px;
+    padding-left: 230px;
     line-height: 40px;
     font-size: 18px;
     color: rgb(77, 76, 76);
@@ -262,9 +285,10 @@ span{
 
 /***ViewProfile***/
 .cont4 {
-    width: 650px;
+    width: 690px;
+    height: 850px;
     position: absolute;
-	top:160px;
+	top:230px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -276,6 +300,15 @@ span{
 
 .content5{
     width: 650px;
+    height: 850px;
     margin: auto;
     padding: 0px 15px 0px 15px;
+}
+
+.data{
+    float: right;
+    position: absolute;
+    color: rgb(136, 133, 133);
+    font-weight: lighter;
+    padding-left: 10px;
 }
