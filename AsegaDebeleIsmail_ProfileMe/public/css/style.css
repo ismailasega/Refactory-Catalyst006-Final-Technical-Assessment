@@ -224,6 +224,14 @@ span{
     font-size: 25px;
     font-family: Helvetica, sans-serif;
 }
+.pic{
+    font-weight: bold;
+    float: right;
+    font-size: 10px;
+    padding-top: 180px;
+    padding-left: 50px;
+    color: #430257;
+}
 .pI{
     float: right;
     font-size: 18px;
@@ -250,4 +258,24 @@ span{
     line-height: 40px;
     font-size: 18px;
     color: rgb(77, 76, 76);
+}
+
+/***ViewProfile***/
+.cont4 {
+    width: 650px;
+    position: absolute;
+	top:160px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+
+}
+
+.content5{
+    width: 650px;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
 }

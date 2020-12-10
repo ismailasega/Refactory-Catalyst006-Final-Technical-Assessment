@@ -53,9 +53,24 @@ router.get('/Students', async(req, res)=>{
     }
 });
 
-//Render Selction Page 
-router.get('/viewProfile', (req, res)=>{
-    res.render('StudentProfile_page');
+//Render profile Page 
+router.get('/viewProfile/:id', async(req, res)=>{
+    try{
+        const studentProfile = await student.findOne({_id:req.params.id});
+        res.render('StudentProfile_page', {Profile: studentProfile});
+    }catch(err){
+        res.status(400).send("unable to find student data");
+    }
 });
+
+//Deleting Student Data
+router.post('/deleteStudent', async(req, res)=>{
+    try{
+        await student.deleteOne({_id: req.body.id});
+        res.redirect('back');
+    }catch(err){
+        res.status(400).send("unable to delete stduent details")
+    }
+})
 
 module.exports = router;
