@@ -6,7 +6,8 @@ const path = require('path');
 require('dotenv').config();
 
 //Declearing routes
-const StudentData =require('./routes/studentData_route');
+const StudentDataRoutes =require('./routes/studentData_route');
+const loginRoutes = require('./routes/login_route')
 
 //Initilising app
 const app =express();
@@ -38,7 +39,8 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 //Telling App to use routes delcared in the routes folder 
-app.use('/', StudentData);
+app.use('/', StudentDataRoutes);
+app.use('/', loginRoutes)
 
 //Handling non-existant route / path
 app.get('*', (req,res)=>{

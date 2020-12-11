@@ -16,7 +16,7 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
           strong Failed!
           |  #{status2}
       .content
-        form(name="AddStudent" action="/RegStudent" method="POST" enctype="multipart/form-data" onsubmit="return validate()")
+        form(name="AddStudent" action="/RegStudent" method="POST" enctype="multipart/form-data" onsubmit="return validate()" autocomplete="off")
           .form-row
             .form-group.col-md-6
               label(for="inputSurname") Sur name 
@@ -26,7 +26,7 @@ link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
             .form-group.col-md-6
               label(for="inputgivenName") Given name 
               span *
-              input.form-control(type="text" name="givenName" placeholder="Enter yor Given Name here")
+              input.form-control(type="text" name="givenName" placeholder="Enter your Given Name here")
               #gName.error
           .form-group
             fieldset

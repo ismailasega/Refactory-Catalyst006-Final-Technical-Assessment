@@ -1,6 +1,8 @@
 body{
-    background: #edf5e7;
     font-family: Arial, Helvetica, sans-serif;
+    background: url("/images/bg2.png") no-repeat;
+    background-size: cover;
+
 }
 /**Access page container**/
 .cont {
@@ -14,7 +16,7 @@ body{
 	margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px #00000077;
-
+    background: #fff;
 }
 
 .content{
@@ -152,6 +154,7 @@ span{
 	margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px #00000077;
+    background: #fff;
 
 }
 .btn3{
@@ -176,7 +179,7 @@ span{
 }
 /**Students_Page**/
 .content3{
-    width: 680px;
+    width: 630px;
     margin: auto;
     height: auto;
     padding: 0px 15px 0px 15px;
@@ -205,6 +208,7 @@ span{
 	margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px #00000077;
+    background: #fff;
 
 }
 .btn4{
@@ -295,6 +299,7 @@ span{
 	margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 30px #00000077;
+    background: #fff;
 
 }
 
@@ -311,4 +316,60 @@ span{
     color: rgb(136, 133, 133);
     font-weight: lighter;
     padding-left: 10px;
+}
+/***login***/
+.login {
+    width: 320px;
+    height: 300px;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #00000077;
+    background: #fff;
+
+}
+
+.loginHeader{
+    width: 320px;
+    height: 60px;
+    background-color: #430257;
+}
+
+.loginHeader h3{
+    line-height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+ }
+
+.loginContent{
+    width: 280px;
+    margin: auto;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+}
+.loginBtn{
+    background-color: #430257;
+    border: 2px solid #430257;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0px 100px 0px 100px;
+}
+.loginBtn:hover{
+    background-color: #ab00df;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #ab00df;
+    padding: 0px 100px 0px 100px;
+    text-decoration: none;
 }
